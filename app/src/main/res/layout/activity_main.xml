@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#FBFBFB"
+        android:textColor="#1F5757"
+        android:id="@+id/title"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/view1"
+        android:background="#A3BCBC"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/view1"
+     >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="180dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter user"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:id="@+id/username"
+            android:background="@drawable/round_edittext"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter password"
+            android:inputType="numberPassword"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:id="@+id/pass"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/round_edittext"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:id="@+id/next"
+            android:textColor="#fff"
+            android:background="@drawable/round_btn"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

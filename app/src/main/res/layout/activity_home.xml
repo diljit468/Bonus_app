@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Admission Form"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#FBFBFB"
+        android:textColor="#1F5757"
+        android:id="@+id/title"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/view1"
+        android:background="#A3BCBC"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view1"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/areu"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:text="Are You?"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/areu"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radioGroup"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Graduate"
+                android:id="@+id/pick"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Under-Graduate"
+                android:id="@+id/delivery"
+                android:layout_marginLeft="20dp"
+                ></RadioButton>
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/click"
+            android:layout_above="@+id/total"
+            android:layout_below="@+id/radioGroup"
+
+            android:layout_margin="5dp"
+            android:background="@drawable/round_edittext">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Select Courses"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:id="@+id/select"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rv"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price : $ 0"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:id="@+id/total"
+            android:layout_above="@+id/radioGroup1"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radioGroup1"
+            android:layout_above="@+id/next"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accommodation $1000 "
+                android:textSize="12sp"
+                ></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:text="Medical Insurace $700"></RadioButton>
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/next"
+            android:textColor="#fff"
+            android:background="@drawable/round_btn"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
